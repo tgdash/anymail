@@ -1,0 +1,15 @@
+name = "anymail"
+main = "src/index.ts"
+compatibility_date = "2025-05-05"
+preview_urls = false
+
+[vars]
+# Comma-separated allowlist domains.
+DOMAINS = "example.com"
+
+# ACCESS_KEY is a secret; keep it out of wrangler.toml.
+# Use `wrangler secret put ACCESS_KEY` for remote config,
+# and `.dev.vars` for local dev if needed.
+
+[[kv_namespaces]]
+binding = "ANYMAIL_CODES"
